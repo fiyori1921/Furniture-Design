@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+}
+.sec1{
+   background-color: #DFE6EF;  
+   padding-left: 50px;
+  
+}
+.sec1 {
+  position: relative; /* Needed for absolute positioning of background */
+  z-index: 1; /* Ensures content stays above background */
+  padding: 40px; /* Adjust based on your content spacing needs */
+}
+
+.sec1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 700.72px;
+  /* transform: translateX(-50%); */
+  width: 452.7px;
+  height: 738.2px;
+  background-color: #386D78;
+  border-radius: 0px 0 76px 76px; 
+  z-index: -1; /* Puts it behind the content */
+  
+}
+
+
+.sec1 .homepage-banner {
+    display: flex;
+    margin-top: 100px;
+    
+  
+}
+.sec1 .homepage-banner > div{
+    flex: 1;
+   
+   
+}
+.sec1 .homepage-banner .sec1-txt h1{
+    font-family: Sugo Pro Classic Trial;
+    display: grid;
+
+
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing:0;
+    font-size: 56px;
+   
+    color: #386D78;
+
+    
+
+}
+.sec1 .homepage-banner .sec1-txt p{
+    font-family: Encode Sans Condensed;
+    opacity: 0.7;
+    font-size: 18px;
+
+}
+.sec1 .homepage-banner .sec1-image{
+    position: absolute;
+    top: 193.99px;
+    left: 426.72px;
+}
+.sec1 nav .link-wraper ul li{
+    font-family: Encode Sans Condensed;
+    font-size: 18px;
+  
+    height: 23px;
+    
+
+
+}
+.sec1 nav .logo p{
+    width: 209px;
+    height: 25px;
+    font-family:Encode Sans ;
+    font-size: 20px;
+    font-weight: 400;
+    opacity: 0.7;
+    padding-top: 50px;
+
+
+}
+/* section 2 */
+
+/* Main container */
+.multi-dropdown-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: fit-content;
+  
+}
+
+/* Dropdown wrapper */
+.multi-dropdown {
+    position: relative;
+}
+
+/* Button styling */
+.multi-dropdown-btn {
+    background-color: #386D78;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0px;
+    cursor: pointer;
+    width: 172px;
+    text-align: center;
+    transition: all 0.3s;
+    font-size: 18px;
+    font-family: Encode Sans Condensed;
+    
+}
+
+/* Dropdown menu - base styling */
+.multi-dropdown-menu {
+    position: absolute;
+    background-color: #386D78;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    min-width: 150px;
+    display: none;
+    z-index: 1000;
+    padding: 5px 0;
+    
+}
+
+/* Right-aligned dropdown */
+.multi-dropdown-menu.right {
+    top: 0;
+    left: 100%;
+    margin-left: 10px;
+}
+
+.multi-dropdown-menu.right::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: -6px;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-right: 6px solid #386D78;
+}
+
+
+
+/* Menu items */
+.multi-dropdown-menu a {
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.2s;
+    white-space: nowrap;
+}
+
+.multi-dropdown-menu a:hover {
+    background-color: #2a525a;
+}
+
+/* Show menu on hover */
+.multi-dropdown:hover .multi-dropdown-menu {
+    display: block;
+      
+}
+
+/* Button hover effect */
+.multi-dropdown:hover .multi-dropdown-btn {
+    background-color: #2a525a;
+}
+/* section 2 background */
+.menu-background {
+    position: absolute;
+    width: 780.686279296875px;
+    height: 297.73724365234375px;
+    top: 1034.22px;
+    left: 457.73px;
+    background-color:#D7CAB6; /* Matching your color scheme */
+    border-radius: 34px;
+    opacity: 1;
+    z-index: -1;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+/* Update your container to be relative */
+.multi-dropdown-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: fit-content;
+    padding: 30px;
+ 
+}
+
+
+
+/* footer */
+footer{
+    justify-content:space-between;
+}
